@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "default", "dirt"
 locale                   : "ko-KR"
 title                    : "seb's dev club"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Today I Learned 😎"
 name                     : "Seb"
 description              : "FE developer를 목표로 공부를 하고자 합니다."
 url                      : "https://ledraco.github.io"
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Seb"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "./assets/img/profile-img.jpg"
   bio              : "FE를 공부합니다!"
   # location         : "Somewhere"
   email            :
@@ -115,41 +115,17 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://ledraco.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/ledraco"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/ledraco"
 
 
 # Reading Files
@@ -220,7 +196,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
@@ -257,16 +233,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
